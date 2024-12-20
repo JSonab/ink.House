@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(225, 237, 230);
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.header a {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(44, 45, 53);
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .container {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  display: flex;
+}
+.header .header__nav {
+  display: flex;
+  gap: 50px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .title {
+  display: flex;
+  flex-direction: row;
+}
+.main .title .title__text-btn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .title .title__text-btn .maintext {
+  font-weight: 500;
+  font-size: 60px;
+  color: rgb(44, 45, 53);
+  line-height: 110%;
+}
+.main .title .title__text-btn .maintext span {
+  color: rgb(89, 141, 102);
+}
+.main .title .title__text-btn .subtext {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(134, 146, 139);
+  margin: 20px 0 60px 0;
+  line-height: 150%;
+}
+.main .title .title__text-btn button {
+  outline: none;
+  background: none;
+}
+.main .title .title__text-btn .btn {
+  font-weight: 500;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(89, 141, 102);
+  width: 225px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(89, 141, 102);
+  background-color: #fff;
+  cursor: pointer;
+}
+.main .title .title__text-btn .btn:hover {
+  color: #fff;
+  background: rgb(89, 141, 102);
+}
+.main .title .title__text-btn .btn:active {
+  background-color: rgb(55, 107, 68);
+  color: #fff;
+}
+.main #repr .h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(44, 45, 53);
+}
+.main #repr .arts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main #repr .arts .art {
+  margin-top: 30px;
+  background-color: rgb(225, 237, 230);
+  padding: 20px;
+  box-sizing: border-box;
+  width: 30%;
+}
+.main #repr .arts .art img {
+  max-width: 100%;
+}
+.main #repr .arts .art .text {
+  margin: 20px 0 30px 0;
+}
+.main #repr .arts .art .text .author {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(134, 146, 139);
+  margin-bottom: 10px;
+}
+.main #repr .arts .art .text .name {
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(44, 45, 53);
+  margin-bottom: 8px;
+}
+.main #repr .arts .art .text .type {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(44, 45, 53);
+  margin-bottom: 30px;
+}
+.main #repr .arts .art .text .price {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(89, 141, 102);
+}
+.main #repr .arts .art button {
+  outline: none;
+  background: none;
+}
+.main #repr .arts .art .btn {
+  font-weight: 500;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(89, 141, 102);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(89, 141, 102);
+  background-color: rgb(225, 237, 230);
+  cursor: pointer;
+}
+.main #repr .arts .art .btn:hover {
+  color: #fff;
+  background: rgb(89, 141, 102);
+}
+.main #repr .arts .art .btn:active {
+  background-color: rgb(55, 107, 68);
+  color: #fff;
+}
+.main #events {
+  background: url(img/pic_background.png) no-repeat center center/cover;
+  height: 574px;
+  margin-top: 70px;
+  position: relative;
+}
+.main #events .events__title-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main #events .events__title-text img {
+  width: 80px;
+}
+.main #events .events__title-text p {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(244, 246, 245);
+}
+.main #events .container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 70px 0 0 265px;
+  justify-content: flex-start;
+  height: 100%;
+}
+.main #events button {
+  outline: none;
+  background: none;
+}
+.main #events .btn {
+  font-weight: 500;
+  font-size: 20px;
+  background: rgb(238, 219, 109);
+  color: rgb(44, 45, 53);
+  box-sizing: border-box;
+  border: 1px solid rgb(89, 141, 102);
+  width: 257px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main #events .btn:hover {
+  background: rgb(250, 235, 151);
+  color: rgb(44, 45, 53);
+}
+.main #events .btn:active {
+  background: rgb(217, 185, 73);
+  color: rgb(44, 45, 53);
+}
+
+/*# sourceMappingURL=style.css.map */

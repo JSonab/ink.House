@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+
+}
+
+$base-color: rgb(225, 237, 230);
+$base-font-color: rgb(44, 45, 53);
+$base-font-color-green: rgb(89, 141, 102);
+
+@mixin font($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: $base-color;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    a{
+        @include font(500, 20px);
+        color: $base-font-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+        display: flex;
+    }
+
+    .header__nav{
+        display: flex;
+        gap: 50px;
+    }
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .title{
+        display: flex;
+        flex-direction: row;
+
+        .title__text-btn{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .maintext{
+                @include font(500, 60px);
+                color: $base-font-color;
+                line-height: 110%;
+        
+                span{
+                    color: $base-font-color-green;
+                }
+            }
+
+            .subtext{
+                @include font(500, 18px);
+                color: rgb(134, 146, 139);
+                margin: 20px 0 60px 0;
+                line-height: 150%;
+            }
+
+            button{
+                outline: none;
+                background: none;
+            }
+
+            .btn{
+                @include font(500, 20px);
+                box-sizing: border-box;
+                border: 1px solid $base-font-color-green;
+                width: 225px;
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $base-font-color-green;
+                background-color: #fff;
+                cursor: pointer;
+                
+            }
+
+            .btn:hover{
+                color: #fff;
+                background: rgb(89, 141, 102);
+            }
+
+            .btn:active{
+                background-color: rgb(55, 107, 68);
+                color: #fff;
+            }
+        }
+    }
+
+    #repr{
+        .h1{
+            @include font(500, 40px);
+            color: $base-font-color;
+        }
+
+        .arts{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .art{
+                margin-top: 30px;
+                background-color: $base-color;
+                padding: 20px;
+                box-sizing: border-box;
+                width: 30%;
+                
+                img{
+                    max-width: 100%;
+                }
+
+                .text{
+                    margin: 20px 0 30px 0;
+
+                    .author{
+                        @include font(500, 18px);
+                        color: rgb(134, 146, 139);
+                        margin-bottom: 10px;
+                    }
+
+                    .name{
+                        @include font(500, 30px);
+                        color: $base-font-color;
+                        margin-bottom: 8px;
+                    }
+
+                    .type{
+                        @include font(500, 18px);
+                        color: $base-font-color;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .price{
+                        @include font(500, 24px);
+                        color: $base-font-color-green;
+                    }
+                }
+
+                button{
+                    outline: none;
+                    background: none;
+                }
+    
+                .btn{
+                    @include font(500, 20px);
+                    box-sizing: border-box;
+                    border: 1px solid $base-font-color-green;
+                    width: 100%;
+                    height: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $base-font-color-green;
+                    background-color: $base-color;
+                    cursor: pointer; 
+                }
+
+                .btn:hover{
+                    color: #fff;
+                    background: rgb(89, 141, 102);
+                }
+
+                .btn:active{
+                    background-color: rgb(55, 107, 68);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    #events{
+        background: url(img/pic_background.png) no-repeat center center / cover;
+        height: 574px;
+        margin-top: 70px;
+        position: relative;
+
+        .events__title-text{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img{
+                width: 80px;
+            }
+
+            p{
+                @include font(500, 40px); 
+                color: rgb(244, 246, 245)
+            }
+        }
+
+        .container{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 70px 0 0 265px;
+            justify-content: flex-start;
+            height: 100%;
+        }
+
+        button{
+            outline: none;
+            background: none;
+        }
+
+        .btn{
+            @include font(500, 20px); 
+            background: rgb(238, 219, 109);
+            color: $base-font-color;
+            box-sizing: border-box;
+            border: 1px solid $base-font-color-green;
+            width: 257px;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; 
+            }
+
+        .btn:hover{
+            background: rgb(250, 235, 151);
+            color: $base-font-color;
+        }
+
+        .btn:active{
+            background: rgb(217, 185, 73);
+            color: $base-font-color
+        }
+        }
+    }
