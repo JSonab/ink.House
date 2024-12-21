@@ -101,6 +101,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .main #repr .arts .art {
   margin-top: 30px;
@@ -164,39 +165,50 @@
   background-color: rgb(55, 107, 68);
   color: #fff;
 }
-.main #events {
+.main .events {
   background: url(img/pic_background.png) no-repeat center center/cover;
   height: 574px;
   margin-top: 70px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
-.main #events .events__title-text {
+.main .events .container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 12%;
+  width: 50vw;
+}
+.main .events .container .events__title-text {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 600px;
 }
-.main #events .events__title-text img {
+.main .events .container .events__title-text img {
   width: 80px;
 }
-.main #events .events__title-text p {
+.main .events .container .events__title-text p {
   font-weight: 500;
   font-size: 40px;
   color: rgb(244, 246, 245);
 }
-.main #events .container {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 70px 0 0 265px;
-  justify-content: flex-start;
-  height: 100%;
+.main .events .container .events__text {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 150%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  max-width: 640px;
 }
-.main #events button {
+.main .events .container button {
   outline: none;
   background: none;
 }
-.main #events .btn {
+.main .events .container .btn {
   font-weight: 500;
   font-size: 20px;
   background: rgb(238, 219, 109);
@@ -210,11 +222,11 @@
   align-items: center;
   cursor: pointer;
 }
-.main #events .btn:hover {
+.main .events .container .btn:hover {
   background: rgb(250, 235, 151);
   color: rgb(44, 45, 53);
 }
-.main #events .btn:active {
+.main .events .container .btn:active {
   background: rgb(217, 185, 73);
   color: rgb(44, 45, 53);
 }
