@@ -22,6 +22,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+.header a:hover {
+  text-decoration: underline;
+}
 .header .container {
   flex-direction: row;
   justify-content: space-around;
@@ -42,6 +45,9 @@
 .main .title {
   display: flex;
   flex-direction: row;
+}
+.main .title .title__img {
+  width: 60vmin;
 }
 .main .title .title__text-btn {
   display: flex;
@@ -82,68 +88,71 @@
   color: rgb(89, 141, 102);
   background-color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 .main .title .title__text-btn .btn:hover {
   color: #fff;
   background: rgb(89, 141, 102);
+  transform: scale(0.9);
 }
 .main .title .title__text-btn .btn:active {
   background-color: rgb(55, 107, 68);
   color: #fff;
 }
-.main #repr .h1 {
+.main .repr .h1 {
   font-weight: 500;
   font-size: 40px;
   color: rgb(44, 45, 53);
+  margin-left: 30px;
 }
-.main #repr .arts {
+.main .repr .arts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
-.main #repr .arts .art {
+.main .repr .arts .art {
   margin-top: 30px;
   background-color: rgb(225, 237, 230);
   padding: 20px;
   box-sizing: border-box;
   width: 30%;
 }
-.main #repr .arts .art img {
+.main .repr .arts .art img {
   max-width: 100%;
 }
-.main #repr .arts .art .text {
+.main .repr .arts .art .text {
   margin: 20px 0 30px 0;
 }
-.main #repr .arts .art .text .author {
+.main .repr .arts .art .text .author {
   font-weight: 500;
   font-size: 18px;
   color: rgb(134, 146, 139);
   margin-bottom: 10px;
 }
-.main #repr .arts .art .text .name {
+.main .repr .arts .art .text .name {
   font-weight: 500;
   font-size: 30px;
   color: rgb(44, 45, 53);
   margin-bottom: 8px;
 }
-.main #repr .arts .art .text .type {
+.main .repr .arts .art .text .type {
   font-weight: 500;
   font-size: 18px;
   color: rgb(44, 45, 53);
   margin-bottom: 30px;
 }
-.main #repr .arts .art .text .price {
+.main .repr .arts .art .text .price {
   font-weight: 500;
   font-size: 24px;
   color: rgb(89, 141, 102);
 }
-.main #repr .arts .art button {
+.main .repr .arts .art button {
   outline: none;
   background: none;
 }
-.main #repr .arts .art .btn {
+.main .repr .arts .art .btn {
   font-weight: 500;
   font-size: 20px;
   box-sizing: border-box;
@@ -157,11 +166,12 @@
   background-color: rgb(225, 237, 230);
   cursor: pointer;
 }
-.main #repr .arts .art .btn:hover {
+.main .repr .arts .art .btn:hover {
   color: #fff;
   background: rgb(89, 141, 102);
+  transform: scale(0.9);
 }
-.main #repr .arts .art .btn:active {
+.main .repr .arts .art .btn:active {
   background-color: rgb(55, 107, 68);
   color: #fff;
 }
@@ -178,7 +188,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  top: 12%;
+  top: 5vmin;
   width: 50vw;
 }
 .main .events .container .events__title-text {
@@ -200,8 +210,8 @@
   font-size: 18px;
   color: rgb(255, 255, 255);
   line-height: 150%;
-  margin-bottom: 10%;
-  margin-top: 5%;
+  margin-bottom: 2vmax;
+  margin-top: 2vmax;
   max-width: 640px;
 }
 .main .events .container button {
@@ -221,14 +231,52 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 .main .events .container .btn:hover {
   background: rgb(250, 235, 151);
   color: rgb(44, 45, 53);
+  transform: scale(0.9);
 }
 .main .events .container .btn:active {
   background: rgb(217, 185, 73);
   color: rgb(44, 45, 53);
+}
+.main .about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .about-us .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  margin: 10vh 0;
+}
+.main .about-us .container .team {
+  font-weight: 500;
+  font-size: 18px;
+  display: grid;
+  width: 50vmin;
+  line-height: 150%;
+  text-align: left;
+  row-gap: 2vh;
+  margin-top: auto;
+}
+.main .about-us .container .team .team__title-text {
+  font-size: 40px;
+}
+.main .about-us .container .team .team__images {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.footer {
+  background-color: rgb(225, 237, 230);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,6 +32,10 @@ $base-font-color-green: rgb(89, 141, 102);
         cursor: pointer;
     }
 
+    a:hover{
+        text-decoration: underline;
+    }
+
     .container {
         flex-direction: row;
         justify-content: space-around;
@@ -55,6 +59,10 @@ $base-font-color-green: rgb(89, 141, 102);
     .title {
         display: flex;
         flex-direction: row;
+
+        .title__img{
+            width: 60vmin;
+        }
 
         .title__text-btn {
             display: flex;
@@ -97,12 +105,13 @@ $base-font-color-green: rgb(89, 141, 102);
                 color: $base-font-color-green;
                 background-color: #fff;
                 cursor: pointer;
-
+                text-decoration: none;
             }
 
             .btn:hover {
                 color: #fff;
                 background: rgb(89, 141, 102);
+                transform: scale(0.9)
             }
 
             .btn:active {
@@ -112,10 +121,11 @@ $base-font-color-green: rgb(89, 141, 102);
         }
     }
 
-    #repr {
+    .repr {
         .h1 {
             @include font(500, 40px);
             color: $base-font-color;
+            margin-left: 30px;
         }
 
         .arts {
@@ -185,6 +195,7 @@ $base-font-color-green: rgb(89, 141, 102);
                 .btn:hover {
                     color: #fff;
                     background: rgb(89, 141, 102);
+                    transform: scale(0.9)
                 }
 
                 .btn:active {
@@ -209,7 +220,7 @@ $base-font-color-green: rgb(89, 141, 102);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            top: 12%;
+            top: 5vmin;
             width: 50vw;
 
             .events__title-text {
@@ -232,8 +243,8 @@ $base-font-color-green: rgb(89, 141, 102);
                 @include font(500, 18px);
                 color: rgb(255, 255, 255);
                 line-height: 150%;
-                margin-bottom: 10%;
-                margin-top: 5%;
+                margin-bottom: 2vmax;
+                margin-top: 2vmax;
                 max-width: 640px;
             }
 
@@ -254,11 +265,13 @@ $base-font-color-green: rgb(89, 141, 102);
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                text-decoration: none;
             }
 
             .btn:hover {
                 background: rgb(250, 235, 151);
                 color: $base-font-color;
+                transform: scale(0.9)
             }
 
             .btn:active {
@@ -267,4 +280,45 @@ $base-font-color-green: rgb(89, 141, 102);
             }
         }
     }
+
+    .about-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vw;
+            margin: 10vh 0;
+
+            .team{
+                @include font(500, 18px);
+                display: grid;
+                width: 50vmin;
+                line-height: 150%;
+                text-align: left;
+                row-gap: 2vh;
+                margin-top: auto;
+
+                .team__title-text{
+                    font-size: 40px;
+                }
+
+                .team__images{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                }
+            }
+        }
+        
+    }
+}
+
+.footer{
+    background-color: $base-color;
 }
