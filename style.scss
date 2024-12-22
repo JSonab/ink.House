@@ -60,8 +60,8 @@ $base-font-color-green: rgb(89, 141, 102);
         display: flex;
         flex-direction: row;
 
-        .title__img{
-            width: 60vmin;
+        .title__img img{
+            width: 50vmin;
         }
 
         .title__text-btn {
@@ -69,7 +69,7 @@ $base-font-color-green: rgb(89, 141, 102);
             align-items: flex-start;
             flex-direction: column;
             justify-content: center;
-
+            width: 30vmax;
 
             .maintext {
                 @include font(500, 60px);
@@ -221,7 +221,7 @@ $base-font-color-green: rgb(89, 141, 102);
             flex-direction: column;
             justify-content: flex-start;
             top: 5vmin;
-            width: 50vw;
+            width: 56vmin;
 
             .events__title-text {
                 display: flex;
@@ -295,6 +295,10 @@ $base-font-color-green: rgb(89, 141, 102);
             gap: 2vw;
             margin: 10vh 0;
 
+            .img{
+                margin-bottom: 7vh;
+            }
+
             .team{
                 @include font(500, 18px);
                 display: grid;
@@ -302,7 +306,6 @@ $base-font-color-green: rgb(89, 141, 102);
                 line-height: 150%;
                 text-align: left;
                 row-gap: 2vh;
-                margin-top: auto;
 
                 .team__title-text{
                     font-size: 40px;
@@ -321,4 +324,25 @@ $base-font-color-green: rgb(89, 141, 102);
 
 .footer{
     background-color: $base-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .container{
+       padding: 4vh 0;
+       display: grid;
+       row-gap: 2vh;
+
+       .phone{
+        @include font(500, 20px);
+        color: $base-font-color;
+        display: grid;
+        row-gap: 1vh;
+
+        .phone__name{
+            @include font(500, 18px);
+            color: rgb(134, 146, 139)
+        }
+       }
+    }
 }

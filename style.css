@@ -46,14 +46,15 @@
   display: flex;
   flex-direction: row;
 }
-.main .title .title__img {
-  width: 60vmin;
+.main .title .title__img img {
+  width: 50vmin;
 }
 .main .title .title__text-btn {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  width: 30vmax;
 }
 .main .title .title__text-btn .maintext {
   font-weight: 500;
@@ -189,7 +190,7 @@
   flex-direction: column;
   justify-content: flex-start;
   top: 5vmin;
-  width: 50vw;
+  width: 56vmin;
 }
 .main .events .container .events__title-text {
   display: flex;
@@ -256,6 +257,9 @@
   gap: 2vw;
   margin: 10vh 0;
 }
+.main .about-us .container .img {
+  margin-bottom: 7vh;
+}
 .main .about-us .container .team {
   font-weight: 500;
   font-size: 18px;
@@ -264,7 +268,6 @@
   line-height: 150%;
   text-align: left;
   row-gap: 2vh;
-  margin-top: auto;
 }
 .main .about-us .container .team .team__title-text {
   font-size: 40px;
@@ -277,6 +280,26 @@
 
 .footer {
   background-color: rgb(225, 237, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container {
+  padding: 4vh 0;
+  display: grid;
+  row-gap: 2vh;
+}
+.footer .container .phone {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(44, 45, 53);
+  display: grid;
+  row-gap: 1vh;
+}
+.footer .container .phone .phone__name {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(134, 146, 139);
 }
 
 /*# sourceMappingURL=style.css.map */
